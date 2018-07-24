@@ -1,0 +1,215 @@
+body {
+  
+  background-color: #f9f9f9;
+}
+
+h1 {
+ text-align: center;
+  font-family: "Overpass Mono",monospace, sans-serif;
+  font-weight:900;
+  font-size: 3rem;
+    margin-bottom: 1%;
+
+
+}
+h2 {
+ text-align: center;
+  font-family: "Overpass Mono",monospace, sans-serif;
+  font-weight:900;
+  font-size: 1.4rem;
+  font-style: italic;
+  color:#222222;
+  width: 60%;
+  margin: auto;  margin-bottom: 1%;
+
+
+}
+
+h2 a {
+
+text-decoration: underline;
+  color: #222222;
+
+}
+
+h3{
+ text-align: center;
+
+font-family: "Overpass Mono",monospace, sans-serif;
+  font-weight:900;
+  font-size: 1.4rem;
+  /*font-style: italic;*/
+  width: 60%;
+  margin: auto;
+/*  height: auto;
+*/  /*background-color: yellow;*/
+    text-decoration: underline wavy yellow;
+  /*margin-bottom: -90%;*/
+  margin-bottom: 1%;
+
+}
+
+.sub{
+  display:flex;
+  justify-content:center;
+  
+}
+
+.selector1 {
+  width: 50%;
+/*   height: 40px; */
+  /*border: dashed .5px salmon;*/
+  padding: 4%;
+border: 2px solid black;
+  background-color: whitesmoke;
+  color: black;
+    font-family: "Overpass Mono",monospace, sans-serif;
+
+
+  font-size: 2rem;
+  font-weight: 900;
+/*  padding: 1200px; */
+transition: ease .2s;
+text-align: center;
+margin-bottom: 20px;
+margin-top: 20px;
+  
+}
+
+.selector1:hover
+
+{
+  background-color: #222;
+
+  color: whitesmoke;
+
+  width: 50%;
+/*   height: 40px; */
+  /*border: dashed .5px salmon;*/
+  padding: 4%;
+
+
+  font-size: 2rem;
+
+}
+
+
+.ak {
+  
+  background-color: green;
+  min-height:100px;
+  
+}
+.flexContainer{
+  
+  display: flex;
+/*   height: 100vh; */
+ 
+  flex-wrap: wrap;
+  justify-content:center;
+  
+}
+
+.flexItem{
+  
+    background-color: white;
+  width: 30%;
+/*   height: 40px; */
+  /*border: .1px dotted gray;*/
+  margin: .5%;
+  border-radius: 7px;
+  font-family: "Overpass Mono",monospace, sans-serif;
+ font-weight: 900;
+/*   color: whitesmoke; */
+  text-align:left;
+  padding: 1%;
+  color: #222;
+  font-size: 1rem;
+/*   animation: ani 3s ease; */
+  text-transform: capitalize;);
+  /*padding-left: 100px;*/
+
+
+ 
+}
+
+span.city {
+  
+  background-color: rgba(255,240,0,.44);
+  padding: .2%;
+
+}
+
+span.cost{
+background-color:  rgba(10,244,42,.14);
+}
+
+span.desc {
+  
+  /*background-color: rgba(10,4,222,.24);*/
+  background-color: rgba(0,0,0,.03);
+    background-color: rgba(250,199,.02);
+    background-color: rgb(255, 216, 187);
+
+  padding: .2%;
+}
+
+span.prod {
+  
+  /*background-color: rgba(10,4,222,.24);*/
+  background-color: rgba(0,0,0,.03);
+    background-color: rgba(0,0,189,.08);
+
+  padding: .2%;
+}
+
+
+
+.thin{
+  
+  padding: 1%;
+
+padding-right: 5%;
+  font-weight: 100;
+  font-size: .8rem;
+  font-style:italic;
+/*   font-family: sans-serif; */
+}
+
+br {
+  
+  line-height:0px;
+  margin: 0;
+
+}
+
+@keyframes ani {
+  
+  from: {
+  transform: rotate(125deg);
+
+  } 
+  
+  to {
+    
+  transform: rotate(.1deg);
+
+
+  }
+  
+  
+}
+.flexItem:hover {
+  
+;box-shadow: 2px 2px 2px 3px rgba(0,0,0,.03);
+     
+
+}
+
+.title {
+  
+font-size: 1.3rem; 
+border-bottom: 4px solid black;
+  border-radius: 2px;
+
+}

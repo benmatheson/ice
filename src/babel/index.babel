@@ -1,0 +1,124 @@
+var url = "https://cdn.rawgit.com/benmatheson/ice/4a1ecfcd/iceDeten.json";
+
+class StatePicker extends React.Component {
+  
+  constructor(props) {
+  super(props);
+    this.handleChange = this.handleChange.bind(this);
+}
+  
+    handleChange(e) {
+    
+    const selectedState = e.target.value;
+    console.log(selectedState);
+    this.props.onChange1(selectedState);
+    
+  }
+
+  
+  render () {
+    
+    return (<select className = 'selector1' onChange={this.handleChange}>
+       
+        <option value="ALASKA">Alaska</option>
+        <option value="ALABAMA">Alabama</option>
+        <option value="CALIFORNIA">California</option>
+
+      
+      </select>)
+    
+    
+    
+    
+    
+
+    
+    
+  }
+  
+ }
+
+
+class IceApp extends React.Component {
+
+constructor(props) {
+  super(props);
+  this.state={ice:[],  ice_data:[]};
+  this.updateState = this.updateState.bind(this);
+ 
+}
+  
+updateState (st) {
+    
+  const selected = this.state.all_ice.filter(d=>d.recipient_state_name
+ == st);
+    console.log("selected")
+
+  console.log(selected)
+    this.setState({ice:selected});
+    
+  }
+  
+  
+  componentWillMount() {
+    
+    fetch(url)
+      .then(d=>d.json())
+      .then(data=> { console.log(data); this.setState({"ice":data, all_ice: data});} //callbakc 1
+          
+   );             
+  } //compwillmount
+  
+  
+render(){
+  
+  
+  return (
+   <div> <div className="sub"> 
+      
+      
+      <StatePicker onChange1 = {this.updateState} />
+      
+      </div>
+
+    <div className="flexContainer" >
+           
+      {this.state.ice.map(
+          d=><div className="flexItem">
+            <span className="title"> {d.recipient_name.toLowerCase()} </span>  <br />           Vendor City:
+
+            <span className="thin" className="city">
+              {d.recipient_city_name.toLowerCase()},
+            </span>
+            <span className="thin">
+              {d.recipient_state_name.toLowerCase()}
+            </span><br />
+           Contract Cost <span className="thin cost">
+             ${(parseInt(d.base_and_exercised_options_value).toLocaleString())}
+            </span>              <br />
+
+            Performance City: 
+            <span className="city">
+              {d.primary_place_of_performance_city_name}<br />
+            </span>
+            Product Category:
+            <span className="thin">
+              {d.product_or_service_code_description.toLowerCase()}
+            </span><br />
+            Contract Description:
+            <span className="desc">
+              {d.award_description.toLowerCase()}
+      </span>
+            </div>)}
+              </div>
+      </div>)
+  
+}
+
+//  render method
+}
+           //componenet
+
+
+
+ReactDOM.render(<IceApp />, document.querySelector('#app'));

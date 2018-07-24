@@ -106,7 +106,8 @@ margin-top: 20px;
 /*   height: 100vh; */
  
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:flex-start;
+  /*align-content:center;*/
   
 }
 
@@ -211,5 +212,19 @@ br {
 font-size: 1.3rem; 
 border-bottom: 4px solid black;
   border-radius: 2px;
+
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.flexItem{
+
+min-width: 45%;
+/*color: red;*/
+
+}
+
 
 }

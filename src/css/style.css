@@ -32,6 +32,24 @@ text-decoration: underline;
 
 }
 
+h4 {
+ text-align: center;
+  font-family: "Overpass Mono",monospace, sans-serif;
+  font-weight:900;
+  font-size: .9rem;
+  /*font-style: italic;*/
+  color:#222222;
+  width: 60%;
+  margin: auto;  margin-bottom: 1%;
+}
+h4 a {
+
+text-decoration: underline;
+  color: #222222;
+
+}
+
+
 h3{
  text-align: center;
 
@@ -219,12 +237,20 @@ border-bottom: 4px solid black;
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+  html { font-size: 30px; }
+
+
 .flexItem{
 
 min-width: 45%;
+/*font-size: 1.7rem;*/
 /*color: red;*/
 
 }
 
 
+h1, h2{
+
+  width: 90%;
+}
 }

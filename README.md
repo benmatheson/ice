@@ -2,4 +2,5 @@ This React projects display DHS ICE Detention Compliance and Removals Office con
 
 The data is sourced from [Enigma Public](https://public.enigma.com/datasets/government-spending-contracts-2017/6f9d4e3c-f651-4874-b1fa-e7fb261ffcfe?filter=%2B%5B%3Eawarding_office_name%5BDETENTION%20COMPLIANCE%20AND%20REMOVALS%5D%5D).
 
+![ice gif](https://cdn.rawgit.com/benmatheson/migrationMap/eb761bcb/data/gifs/ezgif-2-e963e9bdf6small.gif)
 
